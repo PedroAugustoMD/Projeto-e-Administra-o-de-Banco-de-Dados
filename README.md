@@ -1,1 +1,4 @@
-# Projeto-e-Administra-o-de-Banco-de-Dados
+# Projeto-e-Administracao-de-Banco-de-Dados
+## 20200014943
+## Pedro Augusto Medeiros Damasceno
+## pedro.augustohp02@gmail.com

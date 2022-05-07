@@ -47,4 +47,4 @@ CREATE TABLE atividade_projeto(
   PRIMARY KEY(cod_projeto, cod_atividade),
   FOREIGN KEY(cod_projeto) REFERENCES projeto(codigo) on delete set null on update cascade,
   FOREIGN KEY(cod_atividade) REFERENCES atividade(codigo) on delete set null on update cascade
-)
+);

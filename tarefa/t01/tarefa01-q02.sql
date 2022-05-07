@@ -1,0 +1,1 @@
+select nome from funcionario where dtNasc > (SELECT MIN(dtNasc) FROM funcionario)

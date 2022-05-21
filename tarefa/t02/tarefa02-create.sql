@@ -26,7 +26,7 @@ CREATE TABLE milhas(
 CREATE TABLE cliente_voo(
       cliente INTEGER NOT NULL,  	  
   	  voo INTEGER NOT NULL,
-  	  classe VARCHAR(20) NOT NULL
+  	  classe VARCHAR(20) NOT NULL,
   	  PRIMARY KEY (cliente,voo)
   
 );

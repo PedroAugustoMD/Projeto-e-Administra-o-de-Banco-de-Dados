@@ -1,0 +1,38 @@
+CREATE TABLE cliente(
+      codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
+      nome VARCHAR(20) NOT NULL,
+  	  endereco VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE piloto(
+      codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
+      nome VARCHAR(20) NOT NULL,
+  	  num_voos INTEGER NOT NULL
+);
+
+CREATE TABLE voo(
+      codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
+      tipo VARCHAR(20) NOT NULL,
+  	  piloto INTEGER NOT NULL,
+  	  num_passageiros INTEGER NOT NULL,
+  	  distancia float NOT NULL
+);
+
+CREATE TABLE milhas(
+      cliente INTEGER PRIMARY KEY,
+  	  quantidade INTEGER NOT NULL
+);
+
+CREATE TABLE cliente_voo(
+      cliente INTEGER NOT NULL,  	  
+  	  voo INTEGER NOT NULL,
+  	  classe VARCHAR(20) NOT NULL
+  	  PRIMARY KEY (cliente,voo)
+  
+);
+
+
+ALTER TABLE voo ADD CONSTRAINT codpiloto_FK FOREIGN KEY (piloto) REFERENCES piloto(codigo) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE milhas ADD CONSTRAINT codcliente_FK FOREIGN KEY (cliente) REFERENCES cliente(codigo) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE cliente_voo ADD CONSTRAINT codclient2_FK FOREIGN KEY (cliente) REFERENCES cliente(codigo) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE cliente_voo ADD CONSTRAINT codvoo_FK FOREIGN KEY (voo) REFERENCES voo(codigo) ON DELETE RESTRICT ON UPDATE CASCADE;

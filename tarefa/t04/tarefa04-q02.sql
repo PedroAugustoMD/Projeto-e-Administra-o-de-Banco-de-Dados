@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION mediaPorDepartamento() 
+CREATE OR REPLACE FUNCTION calcularMediaPorDepartamento() 
     RETURNS TABLE (
         depto int,
         media decimal
@@ -16,4 +16,4 @@ END; $$
 
 LANGUAGE 'plpgsql';
 
-SELECT * FROM mediaPorDepartamento();
+SELECT * FROM calcularMediaPorDepartamento();

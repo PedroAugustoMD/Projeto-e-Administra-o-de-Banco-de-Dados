@@ -9,7 +9,7 @@ BEGIN
    SELECT 
         a.codigo, 
         a.dataFim - CURRENT_DATE
-   FROM atividade a where situacao != 'Concluído';
+   FROM atividade a where a.situacao != 'Concluído';
 END; $$ 
 
 LANGUAGE 'plpgsql';

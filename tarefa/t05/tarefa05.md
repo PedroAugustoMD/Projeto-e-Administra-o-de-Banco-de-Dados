@@ -7,5 +7,5 @@
 
 #### Python
 
-* É possível conectar o Python a um banco de dados ODBC o módulo de código aberto pyodbc que implementa a especificação Python DB API 2.0. Essa especificação foi projetada para fornecer uma interface consistente para vários bancos de dados e ajudar os desenvolvedores a escrever aplicativos que podem funcionar com diferentes bancos de dados sem alterações significativas no código.
+* É possível conectar o Python a um banco de dados ODBC o módulo de código aberto Psycopg que implementa a especificação Python DB API 2.0 e é a mais popular na linguagem python. Essa especificação foi projetada para fornecer uma interface consistente para vários bancos de dados e ajudar os desenvolvedores a escrever aplicativos que podem funcionar com diferentes bancos de dados sem alterações significativas no código.
 

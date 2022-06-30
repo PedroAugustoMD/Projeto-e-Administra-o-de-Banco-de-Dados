@@ -10,6 +10,9 @@ Atividade.create( codprojeto = 3, datafim = '2022-07-28', datainicio = '2022-06-
 
 # Atualizar o líder de um projeto
 
+projeto = Projeto.select().where(Projeto.codigo == 3).get()        
+projeto.codresponsavel = 2
+projeto.save()
 
 
 # Listar todas os projetos e suas atividades

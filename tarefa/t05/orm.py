@@ -49,3 +49,4 @@ for projeto in query:
     print(projeto.atividade.datainicio.strftime("%d/%m/%Y"))
     print(projeto.atividade.datafim.strftime("%d/%m/%Y"))
     
+database.close()

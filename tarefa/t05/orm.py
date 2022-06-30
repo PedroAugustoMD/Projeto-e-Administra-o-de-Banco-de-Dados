@@ -1,11 +1,11 @@
 from models import *
-
 #Conexão
 
 database.connect()
 
 # Inserir uma atividade em algum projeto
 
+Atividade.create( codprojeto = 3, datafim = '2022-07-28', datainicio = '2022-06-30', descricao = 'BD - Atividade 5')
 
 
 # Atualizar o líder de um projeto
